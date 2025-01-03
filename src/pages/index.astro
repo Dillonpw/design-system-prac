@@ -1,0 +1,12 @@
+---
+import Welcome from "../components/Welcome.astro";
+import { Button } from "../components/ui/button.tsx";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <Welcome />
+  <Button size="md" color="primary">Primary Button</Button>
+  <Button size="lg" color="secondary">Large Secondary Button</Button>
+  <Button color="tertiary">Default Size Tertiary Button</Button>
+</Layout>
