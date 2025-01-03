@@ -16,10 +16,10 @@ const sizeClasses: Record<ButtonSize, string> = {
 };
 
 const colorClasses: Record<ButtonColor, string> = {
-  primary: "bg-primary-400 hover:bg-primary-400/80 text-white",
-  secondary: "bg-secondary-500 hover:bg-secondary-500/80 text-white",
-  tertiary: "bg-tertiary-500 hover:bg-tertiary-600 text-white",
-  accent: "bg-accent-500 hover:bg-accent-500/80 text-white",
+  primary: "bg-primary-400 hover:bg-primary-400/80 text-black",
+  secondary: "bg-secondary-500 hover:bg-secondary-500/80 text-black",
+  tertiary: "bg-tertiary-500 hover:bg-tertiary-500/80 text-black",
+  accent: "bg-accent-500 hover:bg-accent-500/80 text-black",
 };
 
 export function Button({
@@ -32,7 +32,7 @@ export function Button({
   const sizeClass = sizeClasses[size];
   const colorClass = colorClasses[color];
   const baseClasses =
-    "flex items-center justify-center  shadow-lg transition-all hover:scale-105";
+    "flex items-center justify-center border-2 border-black border-b-8 border-r-4 shadow-lg transition-all active:scale-95 active:border-4 active:border-t-2 active:border-l-2";
 
   return (
     <button
