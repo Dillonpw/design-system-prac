@@ -9,10 +9,10 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const sizeClasses: Record<ButtonSize, string> = {
-  sm: "px-3 py-1.5 text-sm",
-  md: "px-4 py-2 text-base",
-  lg: "px-6 py-3 text-lg",
-  xl: "px-12 py-4 text-xl",
+  sm: "px-3 py-1.5 text-sm h-fit font-content",
+  md: "px-4 py-2 text-base h-fit font-content",
+  lg: "px-6 py-3 text-lg h-fit font-content",
+  xl: "px-12 py-4 text-xl font-title font-bold",
 };
 
 const colorClasses: Record<ButtonColor, string> = {
@@ -32,7 +32,7 @@ export function Button({
   const sizeClass = sizeClasses[size];
   const colorClass = colorClasses[color];
   const baseClasses =
-    "flex items-center justify-center border-2 border-black border-b-8 border-r-4 shadow-lg transition-all active:scale-95 active:border-4 active:border-t-2 active:border-l-2";
+    "flex items-center justify-center rounded-md border-2 border-black border-b-8 border-r-4 shadow-lg transition-all hover:translate-y-1 hover:border-r-2 hover:border-b-4 hover:border-t-2 active:scale-95 active:border-t-2 active:border-l-2";
 
   return (
     <button

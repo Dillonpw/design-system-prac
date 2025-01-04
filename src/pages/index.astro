@@ -1,12 +1,23 @@
 ---
 import Welcome from "../components/Welcome.astro";
-import { Button } from "../components/ui/button.tsx";
+import Button from "../components/ui/button.tsx";
+import Card from "../components/ui/card.tsx";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <Welcome />
-  <Button size="md" color="primary">Primary Button</Button>
-  <Button size="lg" color="secondary">Large Secondary Button</Button>
-  <Button size="sm" color="tertiary">Small Tertiary Button</Button>
+  <div class="flex flex-col gap-4">
+    <div class="flex gap-4 mt-20">
+      <Button size="md" color="primary">Primary Button</Button>
+      <Button size="lg" color="secondary">Large Secondary Button</Button>
+      <Button size="xl" color="accent">Extra Large Accent Button</Button>
+      <Button size="sm" color="tertiary">Small Tertiary Button</Button>
+    </div>
+    <div class="grid gap-4">
+      <Card color="accent" size="xl">XL card</Card>
+      <Card color="primary" size="lg">LG card</Card>
+      <Card color="secondary" size="md">MD card</Card>
+      <Card color="tertiary" size="sm">SM card</Card>
+    </div>
+  </div>
 </Layout>
