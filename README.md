@@ -1,48 +1,11 @@
-# Astro Starter Kit: Basics
+# Astro Tailwind React Design system practice
 
-```sh
-npm create astro@latest -- --template basics
-```
+the goal of this project is to create a neobrutalist themed page by first setting up th edesign system, then implemeneting the pieces.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Step 1 in the process was to establish the theme, I settled on a neobrutal theme, with miininal features for clarity, and a block like font called quantico for emphasized text. While I kept in mind that I could use font size for differentiating importance, I wanted to instead opt for using visual heirarchy where possible. This can be seen in the Cards.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Step 2 Was to select a color palette, using a color wheel and locating complimetary colors to the primary. The Idea was bright, light colors to appear pastel-like. Once the colors were selected I designed a tailwind-style scale for the colors and extended the tailwind theme
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+Step 3 consisted of developing some reusable ui components with react, starting with a button with several size and color options, then a card to display data with similar design options.
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Step 4 was to create a header using the selected fonts and correct button size for the job with mobile in mind.
