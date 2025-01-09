@@ -1,0 +1,27 @@
+---
+import Button from "./ui/button";
+---
+
+<div
+  class="mt-16 flex h-16 w-full items-center justify-between border-b-2 bg-secondary-400 px-6 text-center text-xs sm:h-20 sm:justify-evenly sm:px-20 sm:text-sm md:px-40 md:text-xl"
+>
+  Sign up for 10% off your first purchase <Button
+    size="sm"
+    color="tertiary"
+    className="md:hidden"><a href="#">Sign Up</a></Button
+  ><Button size="md" color="tertiary" className="hidden md:block"
+    ><a href="#">Sign Up</a></Button
+  >
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll("a");
+    buttons.forEach((button) => {
+      button.addEventListener("click", (e) => {
+        e.preventDefault();
+        alert("clicked");
+      });
+    });
+  });
+</script>
