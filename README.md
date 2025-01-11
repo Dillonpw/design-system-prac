@@ -9,3 +9,5 @@ Step 2 Was to select a color palette, using a color wheel and locating complimet
 Step 3 consisted of developing some reusable ui components with react, starting with a button with several size and color options, then a card to display data with similar design options.
 
 Step 4 was to create a header using the selected fonts and correct button size for the job with mobile in mind.
+
+step 5 was to make a hero section with some standout text and a large call to action, all content scales with screen size, then I designed a simple gallery section after I decided this theme would make a decent photography portfolio, displaying both serious photos and more lighthearted, the theme is meant to display a serious tone while keeping the colors light
