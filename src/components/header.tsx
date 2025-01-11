@@ -6,8 +6,9 @@ import { Menu, X } from "lucide-react";
 
 const navItems = [
   { href: "/", label: "Home" },
-  { href: "/blog", label: "Blog" },
+  { href: "/gallery", label: "Gallery" },
   { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export function Header() {
@@ -21,7 +22,7 @@ export function Header() {
   }, [isMenuOpen]);
 
   return (
-    <header className="fixed left-0 right-0 top-0 z-50 border-b-4 border-black bg-gray-100 shadow-sm">
+    <header className="fixed left-0 right-0 top-0 z-50 border-b-4 border-black bg-primary-400 shadow-sm">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
         <a href="/" className="font-title text-2xl font-bold text-gray-900">
           Astro
@@ -44,6 +45,7 @@ export function Header() {
 
         <Button
           size="sm"
+          color="secondary"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-expanded={isMenuOpen}
           aria-controls="mobile-menu"
@@ -62,11 +64,11 @@ export function Header() {
 
       {isMenuOpen && (
         <div
-          className="fixed inset-0 z-40 bg-gray-700 bg-opacity-75 md:hidden"
+          className="fixed inset-0 z-40 bg-slate-950 bg-opacity-75 md:hidden"
           onClick={() => setIsMenuOpen(false)}
         >
           <div
-            className="absolute inset-y-0 right-0 h-fit w-full bg-gray-100 px-6 py-6 shadow-xl"
+            className="absolute inset-y-0 right-0 h-fit w-full bg-black px-6 py-6 text-white shadow-xl"
             onClick={(e) => e.stopPropagation()}
           >
             <nav className="mt-8">

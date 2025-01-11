@@ -1,9 +1,9 @@
 ---
-import Header from '../components/header.tsx';
+import Header from "../components/header.tsx";
 ---
 
 <!doctype html>
-<html lang="en" class="bg-gray-100">
+<html lang="en" class="bg-primary-400">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -23,8 +23,8 @@ import Header from '../components/header.tsx';
     <meta name="generator" content={Astro.generator} />
     <title>Home Page</title>
   </head>
-  <body>
-	<Header client:load />
+  <body class="bg-primary-400">
+    <Header client:load />
     <slot />
   </body>
 </html>

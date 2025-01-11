@@ -12,7 +12,7 @@ const sizeClasses: Record<CardSize, string> = {
   sm: "px-3 py-2 text-sm w-fit ",
   md: "px-4 py-4 text-base w-[50%]",
   lg: "px-6 py-6 text-lg w-[80%]",
-  xl: "px-12 py-10 text-xl w-full",
+  xl: "px-2 py-10 text-xl w-[95%]",
 };
 
 const colorClasses: Record<CardColor, string> = {

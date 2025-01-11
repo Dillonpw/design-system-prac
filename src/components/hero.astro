@@ -1,0 +1,24 @@
+---
+import Button from "./ui/button";
+---
+
+<section class="flex items-center justify-center bg-white py-8 md:py-20 bg">
+  <div class="flex flex-col items-center justify-center">
+    <h1
+      class="text-center font-title text-xl sm:text-3xl md:text-6xl lg:text-8xl"
+    >
+      Blank Photography
+    </h1>
+    <p
+      class="lg:py-18 py-4 text-center font-content text-sm sm:py-6 sm:text-lg md:py-10 md:text-xl"
+    >
+      Photographer with a passion for architecture
+    </p>
+    <Button className="hidden md:block" size="xl" color="secondary"
+      ><a href="/contact">Hire Me!</a></Button
+    >
+    <Button className="block md:hidden" size="md" color="secondary"
+      ><a href="/contact">Hire Me!</a></Button
+    >
+  </div>
+</section>

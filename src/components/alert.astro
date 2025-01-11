@@ -3,24 +3,32 @@ import Button from "./ui/button";
 ---
 
 <div
-  class="mt-16 flex h-16 w-full items-center justify-between border-b-2 bg-secondary-400 px-6 text-center text-xs sm:h-20 sm:justify-evenly sm:px-20 sm:text-sm md:px-40 md:text-xl"
+  class="md:px-30 mt-16 flex h-16 w-full items-center justify-between bg-accent-400 px-6 text-center font-content text-xs sm:h-20 sm:justify-evenly sm:px-10 sm:text-sm md:text-xl lg:px-40"
 >
-  Sign up for 10% off your first purchase <Button
-    size="sm"
+  🌟Sign up for my newsletter!🌟
+  <Button size="sm" color="tertiary" className="md:hidden" id="sign-up-mobile">
+    <a href="#">Sign Up</a>
+  </Button>
+  <Button
+    size="md"
     color="tertiary"
-    className="md:hidden"><a href="#">Sign Up</a></Button
-  ><Button size="md" color="tertiary" className="hidden md:block"
-    ><a href="#">Sign Up</a></Button
+    className="hidden md:block"
+    id="sign-up-desktop"
   >
+    <a href="#">Sign Up</a>
+  </Button>
 </div>
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-    const buttons = document.querySelectorAll("a");
+    const buttons = document.querySelectorAll(
+      "#sign-up-mobile, #sign-up-desktop",
+    );
+
     buttons.forEach((button) => {
       button.addEventListener("click", (e) => {
         e.preventDefault();
-        alert("clicked");
+        alert("no sign up action taken. This is a demo");
       });
     });
   });
