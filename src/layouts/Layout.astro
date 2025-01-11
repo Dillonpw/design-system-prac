@@ -1,5 +1,6 @@
 ---
 import Header from "../components/header.tsx";
+import Footer from "../components/footer.astro";
 ---
 
 <!doctype html>
@@ -23,9 +24,10 @@ import Header from "../components/header.tsx";
     <meta name="generator" content={Astro.generator} />
     <title>Home Page</title>
   </head>
-  <body class="bg-primary-400">
+  <body class="bg-primary-400 h-full">
     <Header client:load />
     <slot />
+    <Footer />
   </body>
 </html>
 

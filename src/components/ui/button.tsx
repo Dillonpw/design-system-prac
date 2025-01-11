@@ -32,7 +32,7 @@ export function Button({
   const sizeClass = sizeClasses[size];
   const colorClass = colorClasses[color];
   const baseClasses = 
-    "flex items-center justify-center rounded-md border-2 border-black border-b-8 border-r-4 shadow-lg transition-all hover:translate-y-1 hover:border-r-2 hover:border-b-4 hover:border-t-2 active:scale-95 active:border-t-2 active:border-l-2";
+    "flex items-center justify-center rounded-md border-2 border-black border-b-4 border-r-4 shadow-lg transition-all ";
 
   return (
     <button

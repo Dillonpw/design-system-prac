@@ -1,0 +1,52 @@
+---
+import Card from "./ui/card";
+import { Image } from "astro:assets";
+---
+
+<section class="flex flex-col items-center justify-center px-4 py-8 md:py-20">
+  <h2 class="mb-10 text-center font-title text-xl sm:text-2xl md:text-5xl">
+    Sample Work
+  </h2>
+  <div class="flex flex-col items-center justify-center gap-8 lg:flex-row">
+    <Card
+      size="xl"
+      color="accent"
+      className="flex flex-col items-center justify-center"
+    >
+      <Image
+        width={600}
+        height={400}
+        src="https://3ahhz7vc7k.ufs.sh/f/2x9MeROBnW8i5R7aVlfXvr1A3gF0ashle68VJikDbzSNdfMO"
+        alt="sample1"
+      />
+
+      <p class="text-content mt-5 text-xl">Sample 1</p>
+    </Card>
+    <Card
+      size="xl"
+      color="accent"
+      className="flex flex-col items-center justify-center"
+    >
+      <Image
+        width={600}
+        height={400}
+        src="https://3ahhz7vc7k.ufs.sh/f/2x9MeROBnW8ibd0i27G8YW6qv9G2MLnotHZmcrphsEuIPezy"
+        alt="sample1"
+      />
+      <p class="text-content mt-5 text-xl">Sample 2</p>
+    </Card>
+    <Card
+      size="xl"
+      color="accent"
+      className="flex flex-col items-center justify-center"
+    >
+      <Image
+        width={600}
+        height={400}
+        src="https://3ahhz7vc7k.ufs.sh/f/2x9MeROBnW8iN9HtwbsaU6MqF3QWncEHwJSsNxpzXARo0tdZ"
+        alt="sample1"
+      />
+      <p class="text-content mt-5 text-xl">Sample 3</p>
+    </Card>
+  </div>
+</section>

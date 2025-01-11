@@ -10,9 +10,9 @@ interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
 
 const sizeClasses: Record<CardSize, string> = {
   sm: "px-3 py-2 text-sm w-fit ",
-  md: "px-4 py-4 text-base w-[50%]",
-  lg: "px-6 py-6 text-lg w-[80%]",
-  xl: "px-2 py-10 text-xl w-[95%]",
+  md: "px-4 py-4 text-base w-[50%] min-h-[100px]",
+  lg: "px-6 py-6 text-lg w-[80%] min-h-[200px]",
+  xl: "px-2 py-10 text-xl w-[95%] min-h-[400px]",
 };
 
 const colorClasses: Record<CardColor, string> = {
@@ -32,7 +32,7 @@ export function Card({
   const sizeClass = sizeClasses[size];
   const colorClass = colorClasses[color];
   const baseClasses =
-    "flex items-center justify-center rounded-md font-content border-2 border-black border-b-8 border-r-4 shadow-lg transition-all duration-300 ease-in-out transform hover:translate-y-1 hover:translate-x-[1px] hover:border-r-2 hover:border-b-4";
+    "flex items-center justify-center rounded-md font-content border-2 border-black border-b-8 border-r-4 shadow-lg";
 
   return (
     <div
