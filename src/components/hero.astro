@@ -1,5 +1,7 @@
 ---
 import Button from "./ui/button";
+const heroText = "Blank Photography";
+const heroSubText = "Photographer with a passion for architecture";
 ---
 
 <section class="flex items-center justify-center bg-white py-8 md:py-20">
@@ -7,12 +9,12 @@ import Button from "./ui/button";
     <h1
       class="text-center font-title text-2xl sm:text-3xl md:text-6xl lg:text-8xl"
     >
-      Blank Photography
+      {heroText}
     </h1>
     <p
       class="lg:py-18 py-4 text-center font-content text-sm sm:py-6 sm:text-lg md:py-10 md:text-xl"
     >
-      Photographer with a passion for architecture
+      {heroSubText}
     </p>
     <Button className="hidden md:block" size="xl" color="secondary"
       ><a href="/contact">Hire Me!</a></Button
