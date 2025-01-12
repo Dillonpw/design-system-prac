@@ -64,11 +64,11 @@ export function Header() {
 
       {isMenuOpen && (
         <div
-          className="fixed inset-0 z-40 bg-slate-950 bg-opacity-75 md:hidden"
+          className="fixed inset-0 z-40 bg-slate-950 bg-opacity-20 md:hidden"
           onClick={() => setIsMenuOpen(false)}
         >
           <div
-            className="absolute inset-y-0 right-0 h-fit w-full bg-black px-6 py-6 text-white shadow-xl"
+            className="absolute inset-y-0 right-0 h-fit w-full bg-primary-400 px-6 py-6  border-b border-b-white shadow-xl"
             onClick={(e) => e.stopPropagation()}
           >
             <nav className="mt-8">
