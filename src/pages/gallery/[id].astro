@@ -1,5 +1,4 @@
 ---
-// src/pages/gallery/[id].astro
 export function getStaticPaths() {
   return Array.from({ length: 9 }).map((_, index) => ({
     params: { id: (index + 1).toString() },
@@ -14,7 +13,6 @@ const { id } = Astro.params;
 const currentId = parseInt(id);
 const totalItems = 9;
 
-// Calculate prev/next IDs with bounds checking
 const prevId = currentId > 1 ? currentId - 1 : null;
 const nextId = currentId < totalItems ? currentId + 1 : null;
 ---
